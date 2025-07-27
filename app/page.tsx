@@ -1,15 +1,25 @@
+'use client';
+
+import { useLanguage } from '../contexts/LanguageContext';
+import LanguageToggle from '../components/LanguageToggle';
+
 export default function HomePage() {
+  const { language, t } = useLanguage();
+  const isRTL = language === 'fa';
+
   return (
-    <main className="profile-container">
+    <main className={`profile-container ${isRTL ? 'rtl' : 'ltr'}`}>
       {/* Header Section */}
       <header className="header-section">
+        <div className="language-toggle-container">
+          <LanguageToggle />
+        </div>
         <div className="header-content">
-          <h1 className="profile-name">Mohammad Zarepour</h1>
-          <p className="profile-title">Software Engineer & Developer</p>
+          <h1 className="profile-name">{t('name')}</h1>
+          <p className="profile-title">{t('title')}</p>
           <div className="contact-info">
-            <span className="contact-item">📧 mohammad.zarepour@email.com</span>
-            <span className="contact-item">📱 +1 (555) 123-4567</span>
-            <span className="contact-item">📍 San Francisco, CA</span>
+            <span className="contact-item">📱 {t('email')}</span>
+            <span className="contact-item">📍 {t('location')}</span>
           </div>
         </div>
       </header>
