@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Next.js App',
-  description: 'A Next.js application',
+  title: 'Mohammad Zarepour - Software Engineer',
+  description: 'Professional profile of Mohammad Zarepour, Software Engineer specializing in full-stack development and modern web technologies.',
 };
 
 export default function RootLayout({
