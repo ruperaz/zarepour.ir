@@ -10,6 +10,7 @@ export default function HomePage() {
 
   return (
     <main className={`profile-container ${isRTL ? 'rtl' : 'ltr'}`}>
+      <ScrollAnimations />
       {/* Header Section */}
       <header className="header-section">
         <div className="language-toggle-container">
