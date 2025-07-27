@@ -993,8 +993,8 @@ body {
 
 .skill-tag:hover {
   transform: translateY(-3px) scale(1.1);
-  box-shadow: var(--shadow-lg), var(--shadow-glow);
-  filter: brightness(1.2);
+  box-shadow: var(--shadow-lg), var(--shadow-emerald);
+  filter: brightness(1.15);
 }
 
 /* Education Section */
