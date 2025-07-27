@@ -81,36 +81,54 @@ export default function HomePage() {
 
       {/* Skills Section */}
       <section className="skills-section">
-        <h2 className="section-title">Skills & Expertise</h2>
+        <h2 className="section-title">{t('skillsTitle')}</h2>
         <div className="skills-grid">
           <div className="skill-category">
-            <h3 className="skill-category-title">Frontend</h3>
+            <h3 className="skill-category-title">{t('backendTitle')}</h3>
+            <div className="skill-tags">
+              <span className="skill-tag">Java</span>
+              <span className="skill-tag">Spring Boot</span>
+              <span className="skill-tag">Spring MVC</span>
+              <span className="skill-tag">C#</span>
+              <span className="skill-tag">ASP.NET MVC</span>
+              <span className="skill-tag">Entity Framework</span>
+              <span className="skill-tag">Hibernate</span>
+            </div>
+          </div>
+          <div className="skill-category">
+            <h3 className="skill-category-title">{t('frontendTitle')}</h3>
             <div className="skill-tags">
               <span className="skill-tag">React</span>
-              <span className="skill-tag">Next.js</span>
+              <span className="skill-tag">Angular 2+</span>
               <span className="skill-tag">TypeScript</span>
-              <span className="skill-tag">CSS3</span>
-              <span className="skill-tag">Tailwind</span>
+              <span className="skill-tag">jQuery</span>
+              <span className="skill-tag">Bootstrap</span>
+              <span className="skill-tag">Three.js</span>
+              <span className="skill-tag">D3.js</span>
             </div>
           </div>
           <div className="skill-category">
-            <h3 className="skill-category-title">Backend</h3>
+            <h3 className="skill-category-title">{t('databaseTitle')}</h3>
             <div className="skill-tags">
-              <span className="skill-tag">Node.js</span>
-              <span className="skill-tag">Python</span>
               <span className="skill-tag">PostgreSQL</span>
-              <span className="skill-tag">MongoDB</span>
-              <span className="skill-tag">API Design</span>
+              <span className="skill-tag">MS SQL Server</span>
+              <span className="skill-tag">Oracle</span>
+              <span className="skill-tag">Docker</span>
+              <span className="skill-tag">Kubernetes</span>
+              <span className="skill-tag">Jenkins</span>
+              <span className="skill-tag">Git</span>
             </div>
           </div>
           <div className="skill-category">
-            <h3 className="skill-category-title">Tools & DevOps</h3>
+            <h3 className="skill-category-title">{t('toolsTitle')}</h3>
             <div className="skill-tags">
-              <span className="skill-tag">Git</span>
-              <span className="skill-tag">Docker</span>
-              <span className="skill-tag">AWS</span>
-              <span className="skill-tag">CI/CD</span>
-              <span className="skill-tag">Kubernetes</span>
+              <span className="skill-tag">Linux</span>
+              <span className="skill-tag">Apache Tomcat</span>
+              <span className="skill-tag">Nginx</span>
+              <span className="skill-tag">Grafana</span>
+              <span className="skill-tag">Prometheus</span>
+              <span className="skill-tag">Elasticsearch</span>
+              <span className="skill-tag">Kafka</span>
             </div>
           </div>
         </div>
