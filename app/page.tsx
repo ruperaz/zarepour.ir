@@ -27,15 +27,24 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <h2 className="hero-title">Welcome to My Profile</h2>
+          <h2 className="hero-title">{t('heroTitle')}</h2>
           <p className="hero-description">
-            Passionate software engineer with expertise in full-stack development,
-            modern web technologies, and creating innovative solutions that drive business growth.
+            {t('heroDescription')}
           </p>
           <div className="hero-buttons">
-            <button className="btn-primary">Download Resume</button>
-            <button className="btn-secondary">Contact Me</button>
+            <button className="btn-primary">{t('downloadResume')}</button>
+            <button className="btn-secondary">{t('contactMe')}</button>
           </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="about-section">
+        <h2 className="section-title">{t('aboutTitle')}</h2>
+        <div className="about-content">
+          <p className="about-text">
+            {t('aboutText')}
+          </p>
         </div>
       </section>
 
