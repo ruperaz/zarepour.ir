@@ -271,7 +271,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--gradient-blue);
+  background: var(--gradient-cyan);
   z-index: -1;
   transform: scale(0);
   border-radius: 1.5rem;
@@ -508,7 +508,7 @@ body {
 }
 
 .btn-primary {
-  background: var(--gradient-blue);
+  background: var(--gradient-cyan);
   color: white;
   padding: 1.25rem 3rem;
   border: none;
@@ -569,7 +569,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--gradient-blue);
+  background: var(--gradient-cyan);
   z-index: -1;
   transform: scaleX(0);
   transform-origin: left;
@@ -781,7 +781,7 @@ body {
   left: 0;
   width: 100%;
   height: 4px;
-  background: var(--gradient-blue);
+  background: var(--gradient-cyan);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -815,7 +815,7 @@ body {
 .job-title {
   font-size: 1.625rem;
   font-weight: 700;
-  background: var(--gradient-blue);
+  background: var(--gradient-cyan);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -963,7 +963,7 @@ body {
 }
 
 .skill-tag {
-  background: var(--gradient-blue);
+  background: var(--gradient-cyan);
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
@@ -1079,7 +1079,7 @@ body {
 .degree-title {
   font-size: 1.625rem;
   font-weight: 700;
-  background: var(--gradient-blue);
+  background: var(--gradient-cyan);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1185,7 +1185,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--gradient-blue);
+  background: var(--gradient-cyan);
   z-index: -1;
   transform: scaleY(0);
   transform-origin: bottom;
@@ -1386,7 +1386,7 @@ html {
   left: 0;
   width: 100%;
   height: 4px;
-  background: var(--gradient-blue);
+  background: var(--gradient-cyan);
   transform-origin: left;
   z-index: 9999;
   animation: fadeInUp 1s ease-out;
