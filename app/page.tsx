@@ -2,6 +2,7 @@
 
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageToggle from '../components/LanguageToggle';
+import ScrollAnimations from '../components/ScrollAnimations';
 
 export default function HomePage() {
   const { language, t } = useLanguage();
