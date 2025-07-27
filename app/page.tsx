@@ -50,27 +50,31 @@ export default function HomePage() {
 
       {/* Experience Section */}
       <section className="experience-section">
-        <h2 className="section-title">Professional Experience</h2>
+        <h2 className="section-title">{t('experienceTitle')}</h2>
         <div className="experience-grid">
           <div className="experience-card">
-            <h3 className="job-title">Senior Software Engineer</h3>
-            <p className="company-name">Tech Innovations Inc.</p>
-            <p className="job-duration">2022 - Present</p>
-            <ul className="job-responsibilities">
-              <li>Led development of scalable web applications using React and Node.js</li>
-              <li>Implemented microservices architecture improving system performance by 40%</li>
-              <li>Mentored junior developers and conducted code reviews</li>
-            </ul>
+            <h3 className="job-title">{t('currentPosition')}</h3>
+            <p className="company-name">{t('currentCompany')}</p>
+            <p className="job-duration">{t('currentDuration')}</p>
+            <p className="job-description">{t('currentDescription')}</p>
           </div>
           <div className="experience-card">
-            <h3 className="job-title">Full Stack Developer</h3>
-            <p className="company-name">Digital Solutions Corp.</p>
-            <p className="job-duration">2020 - 2022</p>
-            <ul className="job-responsibilities">
-              <li>Developed responsive web applications with modern frameworks</li>
-              <li>Collaborated with cross-functional teams to deliver projects on time</li>
-              <li>Optimized database queries reducing load times by 50%</li>
-            </ul>
+            <h3 className="job-title">{t('fullstackDev')}</h3>
+            <p className="company-name">{t('rayanCompany')}</p>
+            <p className="job-duration">{t('rayanDuration')}</p>
+            <p className="job-description">{t('rayanDescription')}</p>
+          </div>
+          <div className="experience-card">
+            <h3 className="job-title">{t('seniorDev')}</h3>
+            <p className="company-name">{t('shabakeCompany')}</p>
+            <p className="job-duration">{t('shabakeDuration')}</p>
+            <p className="job-description">{t('shabakeDescription')}</p>
+          </div>
+          <div className="experience-card">
+            <h3 className="job-title">{t('webgisDev')}</h3>
+            <p className="company-name">{t('miadCompany')}</p>
+            <p className="job-duration">{t('miadDuration')}</p>
+            <p className="job-description">{t('miadDescription')}</p>
           </div>
         </div>
       </section>
