@@ -6,18 +6,19 @@
 }
 
 :root {
-  /* Modern Color Palette */
-  --primary-navy: #0f172a;
-  --primary-blue: #3b82f6;
-  --primary-purple: #8b5cf6;
-  --accent-gold: #f59e0b;
-  --accent-cyan: #06b6d4;
+  /* Modern 2024 Color Palette */
+  --primary-dark: #0a0a0a;
+  --primary-slate: #1e293b;
+  --primary-cyan: #0ea5e9;
+  --primary-emerald: #10b981;
+  --accent-coral: #ff6b6b;
+  --accent-lime: #84cc16;
   --text-dark: #0f172a;
   --text-gray: #64748b;
   --text-light: #94a3b8;
   --background-white: #ffffff;
   --background-gray: #f8fafc;
-  --background-dark: #0f172a;
+  --background-dark: #0a0a0a;
   --border-light: #e2e8f0;
   --glass-bg: rgba(255, 255, 255, 0.1);
   --glass-border: rgba(255, 255, 255, 0.2);
@@ -27,16 +28,18 @@
   --shadow-md: 0 4px 16px -4px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.3);
-  --shadow-purple: 0 10px 40px rgba(139, 92, 246, 0.3);
+  --shadow-glow: 0 0 30px rgba(14, 165, 233, 0.4);
+  --shadow-emerald: 0 10px 40px rgba(16, 185, 129, 0.3);
+  --shadow-coral: 0 10px 40px rgba(255, 107, 107, 0.3);
 
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  /* Modern Gradients */
+  --gradient-primary: linear-gradient(135deg, #0ea5e9 0%, #10b981 100%);
+  --gradient-hero: linear-gradient(135deg, #0a0a0a 0%, #1e293b 50%, #334155 100%);
   --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-  --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
-  --gradient-blue: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-  --gradient-purple: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  --gradient-accent: linear-gradient(135deg, #10b981 0%, #0ea5e9 100%);
+  --gradient-cyan: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  --gradient-emerald: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --gradient-coral: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
 }
 
 body {
