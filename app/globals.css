@@ -387,7 +387,7 @@ body {
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: var(--gradient-accent);
+  background: var(--gradient-primary);
   border-radius: 2px;
   animation: fadeInUp 1s ease-out 0.8s backwards;
 }
