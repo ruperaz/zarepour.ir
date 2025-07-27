@@ -136,22 +136,28 @@ export default function HomePage() {
 
       {/* Education Section */}
       <section className="education-section">
-        <h2 className="section-title">Education</h2>
-        <div className="education-card">
-          <h3 className="degree-title">Bachelor of Science in Computer Science</h3>
-          <p className="university-name">University of California, Berkeley</p>
-          <p className="graduation-year">2018 - 2022</p>
-          <p className="education-details">Graduated Magna Cum Laude • GPA: 3.8/4.0</p>
+        <h2 className="section-title">{t('educationTitle')}</h2>
+        <div className="education-grid">
+          <div className="education-card">
+            <h3 className="degree-title">{t('mastersDegree')}</h3>
+            <p className="university-name">{t('mastersUniversity')}</p>
+            <p className="graduation-year">{t('mastersDuration')}</p>
+          </div>
+          <div className="education-card">
+            <h3 className="degree-title">{t('bachelorsDegree')}</h3>
+            <p className="university-name">{t('bachelorsUniversity')}</p>
+            <p className="graduation-year">{t('bachelorsDuration')}</p>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="footer-section">
-        <p className="footer-text">© 2024 Mohammad Zarepour. All rights reserved.</p>
+        <p className="footer-text">{t('footerText')}</p>
         <div className="social-links">
-          <a href="#" className="social-link">LinkedIn</a>
-          <a href="#" className="social-link">GitHub</a>
-          <a href="#" className="social-link">Portfolio</a>
+          <a href="#" className="social-link">{t('linkedin')}</a>
+          <a href="#" className="social-link">{t('github')}</a>
+          <a href="#" className="social-link">{t('portfolio')}</a>
         </div>
       </footer>
     </main>
