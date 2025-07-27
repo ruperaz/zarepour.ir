@@ -28,9 +28,71 @@ body {
   background-color: var(--background-white);
 }
 
+/* Improve text rendering for Persian */
+.rtl * {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Main Container */
 .profile-container {
   min-height: 100vh;
+}
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Language Toggle */
+.language-toggle-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.language-toggle {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  padding: 0.25rem;
+  backdrop-filter: blur(10px);
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 50px;
+}
+
+.lang-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn.active {
+  background-color: white;
+  color: var(--primary-navy);
+  box-shadow: var(--shadow-sm);
+}
+
+/* RTL Adjustments for Language Toggle */
+.rtl .language-toggle-container {
+  right: auto;
+  left: 1rem;
 }
 
 /* Header Section */
@@ -175,8 +237,34 @@ body {
 /* Experience Section */
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
+}
+
+/* About Section */
+.about-section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--background-white);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+}
+
+/* RTL Support for About Section */
+.rtl .about-text {
+  text-align: right;
+  font-family: 'Vazir', 'Tahoma', sans-serif;
 }
 
 .experience-card {
@@ -235,6 +323,24 @@ body {
   top: 0.125rem;
 }
 
+/* RTL Support for Job Responsibilities */
+.rtl .job-responsibilities li {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+.rtl .job-responsibilities li::before {
+  left: auto;
+  right: 0;
+  content: '◀';
+}
+
+.job-description {
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
 /* Skills Section */
 .skills-section {
   background-color: var(--background-gray);
@@ -284,14 +390,32 @@ body {
 }
 
 /* Education Section */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .education-card {
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: var(--shadow-md);
   border-left: 4px solid var(--accent-gold);
-  max-width: 600px;
-  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* RTL Support for Education Cards */
+.rtl .education-card {
+  border-left: none;
+  border-right: 4px solid var(--accent-gold);
 }
 
 .degree-title {
@@ -385,14 +509,29 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
   .section-title {
     font-size: 1.875rem;
+  }
+
+  .language-toggle-container {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .rtl .language-toggle-container {
+    right: auto;
+    left: 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .header-section,
   .hero-section,
+  .about-section,
   .experience-section,
   .skills-section,
   .education-section {
@@ -406,4 +545,30 @@ body {
   .hero-title {
     font-size: 1.75rem;
   }
+
+  .experience-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Persian Font Support */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.rtl {
+  font-family: 'Vazir', 'Tahoma', 'Arial', sans-serif;
+}
+
+.rtl .profile-name,
+.rtl .hero-title,
+.rtl .section-title {
+  font-family: 'Vazir', 'Tahoma', sans-serif;
+  font-weight: 700;
+}
+
+.rtl .hero-description,
+.rtl .about-text,
+.rtl .job-description {
+  line-height: 1.8;
+  font-size: 1rem;
 }
